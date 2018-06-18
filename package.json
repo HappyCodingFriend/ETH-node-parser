@@ -1,24 +1,17 @@
 {
 	"name": "eth-node-parser",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.html",
+	"version": "0.0.0",
+	"private": true,
 	"scripts": {
-		"start": "",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"ganache-cli": "ganache-cli --port 8545 --accounts 5 --gasPrice 0 --db ./ganachedata --account=\"0x4ec2b6279adcae4edc0767672b4a33d34717462b59e8ae6eb3e76e62aec1a3ae,1000000000000000000000\" --account=\"0x18e6956b8c78e45c0c14774310503d1949012834105540f6a09480256f30636c,1000000000000000000000\""
+		"start": "node ./bin/www",
+		"debug": "SET DEBUG=eth-node-parser:* & npm start"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/HappyCodingFriend/ETH-node-parser.git"
-	},
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/HappyCodingFriend/ETH-node-parser/issues"
-	},
-	"homepage": "https://github.com/HappyCodingFriend/ETH-node-parser#readme",
 	"dependencies": {
-		"web3": "^1.0.0-beta.34"
+		"bulma": "^0.7.1",
+		"cookie-parser": "~1.4.3",
+		"debug": "~2.6.9",
+		"express": "~4.16.0",
+		"morgan": "~1.9.0",
+		"node-sass-middleware": "0.11.0"
 	}
 }
